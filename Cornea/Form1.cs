@@ -153,7 +153,8 @@ namespace Cornea
 
             MagInitialize();
             MagSetFullscreenColorEffect(ref magEffectInvert);
-            display.Text = "bw";
+            display.Text = "Simple: "+ reading.Text;
+            Hide_Sub_Menu();
             wait(60000);
 
             MagUninitialize();
@@ -181,6 +182,7 @@ namespace Cornea
             MagUninitialize();
             button1.Text = sleep.Text;
             display.Text = "Simple: " + sleep.Text;
+            SetBrightness(30);
             Hide_Sub_Menu();
         }
         #endregion
